@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: springbatch-db-csv
+  main:
+      web-application-type: none
+  batch:
+    jdbc:
+      initialize-schema: always
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
